@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <li><a href="" target="_blank">Investment Calculator</a></li>
+    </nav>
+    <div class="calcForm_c">
+        <form name="calcForm" action="#" method="get" onsubmit="return submitData()">
+            <label for="balance">Balance of Account:</label><br>
+            <input type="number" id="balance" name="balance"><br>
+            <label for="interest">Annual Interest Rate:</label><br>
+            <input type="number" id="interest" name="interest" step="0.01"><br>
+            <label for="intDuration">Duration of Interest (in months):</label><br>
+            <input type="number" id="intDuration" name="intDuration" step="1"><br>
+
+            <button type="submit" value="Submit">Submit</button>
+            <div>
+                <p id="futureValue"></p><br>
+                
+            </div>
+
+        </form>
+
+    </div>
+</body>
+<script src="java.js"></script>
+</html>
